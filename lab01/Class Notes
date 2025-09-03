@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+
+<html large="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Title</title>
+</head>
+
+<body>
+    <h1>Title of the Page</h1>
+    <h2>Subtitle<h2>
+    <!-- Here is a comment. It doesn't display.-->
+    <p>Content goes here</p>
+</body>
+
+</html>
