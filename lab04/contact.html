@@ -27,27 +27,30 @@
 
 </body>
 </html>
+
+<hr>
+<h2>Contact Form</h2>
+
 <hr>
 <h2>Contact Form</h2>
 
 <form action="" method="post">
+    <!-- Text field -->
     <label for="fullname">Your Name:</label><br>
     <input type="text" id="fullname" name="fullname"><br><br>
 
-    <p>How did you hear about me?</p>
-    <input type="radio" id="friend" name="referral" value="Friend">
-    <label for="friend">Friend</label><br>
-    <input type="radio" id="web" name="referral" value="Web Search">
-    <label for="web">Web Search</label><br>
-    <input type="radio" id="social" name="referral" value="Social Media">
-    <label for="social">Social Media</label><br><br>
+    <!-- Select (dropdown menu) -->
+    <label for="reason">Reason for Contact:</label><br>
+    <select id="reason" name="reason">
+        <option value="question">General Question</option>
+        <option value="services">Services Inquiry</option>
+        <option value="feedback">Website Feedback</option>
+    </select><br><br>
 
-    <input type="checkbox" id="updates" name="updates" value="yes">
-    <label for="updates">Subscribe to updates</label><br><br>
-
+    <!-- Textarea -->
     <label for="message">Your Message:</label><br>
     <textarea id="message" name="message" rows="4" cols="40"></textarea><br><br>
 
+    <!-- Submit button -->
     <input type="submit" value="Send">
 </form>
-
