@@ -23,6 +23,7 @@ h1, h2, h3 {
 nav {
   background-color: #97ebdb;
   padding: 10px;
+  margin-bottom: 30px;
 }
 
 nav a {
