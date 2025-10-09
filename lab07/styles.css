@@ -1,11 +1,9 @@
 body {
-  background-color: yellow;
-}
-
-body {
   background-color: #daf8e3;
   color: #005582;
   font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -31,11 +29,12 @@ nav a {
   color: #005582;
   margin-right: 15px;
   font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 nav a:hover {
   background-color: #00c2c7;
   color: #ffffff;
-  padding: 5px;
-  border-radius: 5px;
 }
