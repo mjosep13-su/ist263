@@ -39,3 +39,29 @@ nav a:hover {
   background-color: #00c2c7;
   color: #ffffff;
 }
+
+.part2 {
+  display: flex;
+}
+
+.article1 { 
+  flex: 2; 
+  order: 3; 
+  background-color: #97ebdb;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.article2 { 
+  flex: 1; 
+  order: 2; 
+}
+
+.article3 { 
+  flex: 1; 
+  order: 1; 
+}
+
+.part2 article {
+  margin: 10px;
+}
