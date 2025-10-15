@@ -40,28 +40,61 @@ nav a:hover {
   color: #ffffff;
 }
 
-.part2 {
+.row {
   display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  gap: 20px;
 }
 
-.article1 { 
-  flex: 2; 
-  order: 3; 
+.col {
   background-color: #97ebdb;
-  border-radius: 15px;
-  padding: 15px;
+  border-radius: 10px;
+  padding: 25px;
+  flex: 1;
 }
 
-.article2 { 
-  flex: 1; 
-  order: 2; 
+.form form,
+.map iframe {
+  width: 100%;
 }
 
-.article3 { 
-  flex: 1; 
-  order: 1; 
+form label {
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 6px;
+  color: #005582;
 }
 
-.part2 article {
-  margin: 10px;
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  border: 1px solid #00c2c7;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #005582;
 }
+
+input[type="submit"] {
+  margin-top: 14px;
+  padding: 10px 16px;
+  background: #00c2c7;
+  color: #ffffff;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background: #0086ad;
+}
+
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
