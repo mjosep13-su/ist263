@@ -1,54 +1,64 @@
 <!DOCTYPE html>
-    <html lang="en">
-        <head>
-            <meta charset="utf-8">
-            <title>Contact</title>
-            <link rel="stylesheet" href="styles.css">
-        </head>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Contact — Melanie Joseph</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
 <body>
-    <nav>
-        <a href="index.html">Home</a> | 
-        <a href="skills.html">Skills</a> | 
-        <a href="contact.html">Contact</a>
-    </nav>
-    <h1>Contact</h1>
-    <p>
-        Melanie Joseph 
-    </p>
-    <p>
-        Syracuse University <br>
-        900 South Crouse Ave <br>
-        Syracuse, NY 13244 
-    </p>
-    <a href="mailto:mjosep13@syr.edu">mjosep13@syr.edu</a>
-    <p>
-    <a href="https://www.linkedin.com/in/melaniejoseph17/"> My LinkedIn Profile
-    <img src="../images2/newlogo-sized.png" alt="LinkedIn Icon">
-  </a>
-    </p>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="skills.html">Skills</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 
+  <h1>Contact Me</h1>
 
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11664.224126573197!2d-76.14727119583111!3d43.040252569222524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f39fcbf2fa41%3A0x2f27cf39348c76c7!2s900%20S%20Crouse%20Ave%2C%20Syracuse%2C%20NY%2013210!5e0!3m2!1sen!2sus!4v1757536049087!5m2!1sen!2sus" 
-    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
+  <div class="row row1">
+    <div class="col address">
+      <h2>Address</h2>
+      <p>123 Main Street<br>Atlanta, GA 30308</p>
+    </div>
+    <div class="col links">
+      <h2>Contact Links</h2>
+      <p>
+        Email: <a href="mailto:melanie@example.com">melanie@example.com</a><br>
+        LinkedIn: <a href="https://linkedin.com/in/melaniejoseph">melaniejoseph</a>
+      </p>
+    </div>
+  </div>
 
+  <div class="row row2">
+    <div class="col form">
+      <h2>Contact Form</h2>
+      <form>
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required>
 
-<h2>Contact Form</h2>
-<form action="https://formspree.io/f/xovnojgz " method="post">
-    <label for="fullname">Your Name:</label><br>
-    <input type="text" id="fullname" name="fullname"><br><br>
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required>
 
-    <label for="reason">Reason for Contact:</label><br>
-    <select id="reason" name="reason">
-        <option value="question">General Question</option>
-        <option value="services">Services Inquiry</option>
-        <option value="feedback">Website Feedback</option>
-    </select><br><br>
+        <label for="subject">Subject</label>
+        <input id="subject" name="subject" type="text">
 
-    <label for="message">Your Message:</label><br>
-    <textarea id="message" name="message" rows="4" cols="40"></textarea><br><br>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
 
-    <input type="submit" value="Send">
-</form>
+        <input type="submit" value="Send">
+      </form>
+    </div>
+    <div class="col map">
+      <h2>Map</h2>
+      <iframe
+        src="https://www.google.com/maps?q=Atlanta,+GA&output=embed"
+        width="100%" height="320" style="border:0" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
 
+  <footer>
+    <p>&copy; 2025 Melanie Joseph</p>
+  </footer>
 </body>
 </html>
