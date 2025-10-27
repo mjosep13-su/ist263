@@ -8,15 +8,23 @@
     body {
       font-family: Arial, sans-serif;
       text-align: center;
+      margin: 0;
       padding-top: 100px;
     }
+    .large {
+      display: block;
+    }
 
-    .large { display: block; }
-    .small { display: none; }
-
-    @media (max-width: 800px) {
-      .large { display: none; }
-      .small { display: block; }
+    .small {
+      display: none;
+    }
+    @media screen and (max-width: 800px) {
+      .large {
+        display: none;
+      }
+      .small {
+        display: block;
+      }
     }
   </style>
 </head>
