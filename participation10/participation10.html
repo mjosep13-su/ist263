@@ -3,29 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive Example</title>
+  <title>Viewport Test</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      margin-top: 100px;
-    }
-
     .large {
-      font-size: 2em;
-      color: green;
-      margin-bottom: 20px;
+      display: block;
+    }
+    .small {
+      display: none;
     }
 
-    .small {
-      font-size: 2em;
-      color: blue;
+    @media screen and (max-width: 800px) {
+      .large {
+        display: none;
+      }
+      .small {
+        display: block;
+      }
     }
   </style>
 </head>
 <body>
-  <p class="large">I’m large.<br>When the viewport is over 800 pixels.</p>
-  <p class="small">I’m small.<br>When the viewport is 800 pixels or less.</p>
+  <div class="large">I’m large.</div>
+  <div class="small">I’m small.</div>
 </body>
 </html>
 
