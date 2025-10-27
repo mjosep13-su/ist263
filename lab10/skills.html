@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Skills Table</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: center;
+        }
+
+        caption {
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        .evenrow {
+            background-color: #f2f2f2;
+        }
+
+        th {
+            background-color: navy;
+            color: white;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+       .skillsflex {
+        display: flex;
+        justify-content: center;    
+        align-items: flex-start;
+        gap: 40px;                   
+        margin: 20px;
+        }
+
+        .skillstable table {
+            margin: 0 auto; 
+        }
+
+        .skillsimage {
+            text-align: center; 
+        }
+
+        .skillsimage img {
+            max-width: 250px;
+            height: auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a> | 
+        <a href="skills.html">Skills</a> | 
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <h1>Technical Skills</h1>
+
+    <div class="skillsflex">
+        <div class="skillstable">
+            <table>
+                <tr>
+                    <th>Skill</th>
+                    <th>Competency Level</th>
+                    <th>Years of Experience</th>
+                </tr>
+                <tr>
+                    <td>HTML</td>
+                    <td>Advanced</td>
+                    <td>3</td>
+                </tr>
+                <tr class="evenrow">
+                    <td>CSS</td>
+                    <td>Intermediate</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>Intermediate</td>
+                    <td>2</td>
+                </tr>
+                <tr class="evenrow">
+                    <td>Python</td>
+                    <td>Advanced</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>SQL</td>
+                    <td>Intermediate</td>
+                    <td>2</td>
+                </tr>
+                <tr class="evenrow">
+                    <td>Tableau</td>
+                    <td>Advanced</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>GitHub</td>
+                    <td>Intermediate</td>
+                    <td>3</td>
+                </tr>
+                <tr class="evenrow">
+                    <td>Excel</td>
+                    <td>Advanced</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Project Management Tools</td>
+                    <td>Intermediate</td>
+                    <td>2</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="skillsimage">
+            <img src="https://mjosep13-su.github.io/ist263/images2/skill_3775447.png" alt="Skills Illustration">
+        </div>
+    </div>
+</body>
+</html>
