@@ -1,42 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Participation 10 – Responsive View</title>
+  <title>Viewport Test</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      margin: 0;
-      padding-top: 100px;
-    }
     .large {
       display: block;
     }
-
     .small {
       display: none;
     }
+
     @media screen and (max-width: 800px) {
       .large {
         display: none;
       }
       .small {
-        display: none;
+        display: block;
       }
     }
   </style>
 </head>
 <body>
-  <div class="large">
-    <h1>I’m large.</h1>
-    <p>When the viewport is over 800 pixels.</p>
-  </div>
-
-  <div class="small">
-    <h1>I’m small.</h1>
-    <p>When the viewport is 800 pixels or less.</p>
-  </div>
+  <div class="large">I’m large.</div>
+  <div class="small">I’m small.</div>
 </body>
 </html>
