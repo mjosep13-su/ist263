@@ -24,11 +24,12 @@ nav {
   background-color: #97ebdb;
   padding: 10px;
   margin-bottom: 30px;
+  text-align: center;
 }
 
 nav a {
   color: #005582;
-  margin-right: 15px;
+  margin: 0 10px;
   font-weight: bold;
   padding: 5px 10px;
   border-radius: 5px;
@@ -96,15 +97,39 @@ input[type="submit"]:hover {
   background: #0086ad;
 }
 
+.profileimg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
 @media (max-width: 800px) {
   .row {
     flex-direction: column;
   }
 }
 
-.profileimg {
-  max-width: 100%;
-  height: auto;
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin: 20px;
+  padding: 25px;
+  background-color: #97ebdb;
+  border-radius: 12px;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+
+.col {
+  flex: 1 1 320px;
+  min-width: 260px;
+}
+
+.map {
   display: block;
-  margin: 0 auto;
+  width: 100%;
+  height: 320px;
+  border: 0;
 }
