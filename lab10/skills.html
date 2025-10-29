@@ -99,12 +99,29 @@
         gap: 30px;
       }
     }
+
+    /* ===== Navigation stacking for smaller screens ===== */
+    @media (max-width: 900px) {
+      nav a {
+        display: block;
+        width: 100%;
+        padding: 12px 0;
+      }
+
+      nav .pipe {
+        display: none;
+      }
+
+      nav a + a {
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+      }
+    }
   </style>
 </head>
 <body>
   <nav>
-    <a href="index.html">Home</a> |
-    <a href="skills.html">Skills</a> |
+    <a href="index.html">Home</a> <span class="pipe">|</span>
+    <a href="skills.html">Skills</a> <span class="pipe">|</span>
     <a href="contact.html">Contact</a>
   </nav>
 
