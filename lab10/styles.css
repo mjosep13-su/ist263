@@ -133,3 +133,20 @@ input[type="submit"]:hover {
   height: 320px;
   border: 0;
 }
+
+.skillstable table{
+    margin: 0 auto;
+}
+.skillstable {flex-basis:50%}
+
+.skillsimage {flex-basis: 50%;
+  text-align: center;}
+
+.skillsflexbocx{display: flex;
+  align-items: flex-start;
+  padding: 20px;
+  background-color:#ffffff;
+  border-radius: 10px;
+  margin: 20px;}
+
+
