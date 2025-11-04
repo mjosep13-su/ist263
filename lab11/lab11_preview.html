@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lab 11 – Shell Game</title>
+
+  <link rel="stylesheet" href="animate2.css" />
+
+  <style>
+    .container { display: flex; gap: 16px; align-items: center; flex-wrap: wrap; }
+    #first  { order: 2; }
+    #second { order: 3; }
+    #third  { order: 4; }
+  </style>
+
+  <script>
+    function WinnerMessage() {
+      document.getElementById("result").innerHTML = "You Won!";
+    }
+    function TryAgain() {
+      document.getElementById("result").innerHTML = "Wrong Shell - Try Again";
+    }
+    function ShuffleShells() {
+      var randomOrder = Math.floor(Math.random() * 3) + 2; // 2, 3, or 4
+      document.getElementById("first").style.order = randomOrder;
+    }
+  </script>
+</head>
+<body onload="ShuffleShells()">
+  <h1>Shell Game – Version 2 (Inline Messages + Shuffle)</h1>
+
+  <div class="container">
+    <img id="first"  src="images/shell1.jpg" alt="Shell 1" onclick="WinnerMessage();" />
+    <img id="second" src="images/shell2.jpg" alt="Shell 2" onclick="TryAgain();" />
+    <img id="third"  src="images/shell3.jpg" alt="Shell 3" onclick="TryAgain();" />
+  </div>
+
+  <div id="result"></div>
+</body>
+</html>
