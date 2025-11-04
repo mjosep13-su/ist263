@@ -7,29 +7,17 @@
 
   <link rel="stylesheet" href="animate.css" />
 
-  <style>
-    body { font-family: Arial, Helvetica, sans-serif; margin: 0; padding: 24px; }
-    h1 { margin-top: 0; }
-    .game { display: flex; gap: 20px; align-items: center; flex-wrap: wrap; }
-    .game img { width: 200px; height: auto; cursor: pointer; border-radius: 12px; }
-    .hint { margin-top: 12px; color: #555; font-size: 0.95rem; }
-  </style>
-
   <script>
     function WinnerMessage() { alert("You Won"); }
-    function TryAgain()     { alert("Wrong Shell - Try Again"); }
+    function TryAgain() { alert("Wrong Shell - Try Again"); }
   </script>
 </head>
 <body>
   <h1>Shell Game – Version 1 (Alerts)</h1>
-  <p>Pick a shell. For this demo, the first shell is the winner.</p>
+  <p>Pick a shell. The first shell is the winner for this lab step.</p>
 
-  <div class="game">
-    <img id="first"  src="images/shell1.jpg" alt="Shell 1" onclick="WinnerMessage();" />
-    <img id="second" src="images/shell2.jpg" alt="Shell 2" onclick="TryAgain();" />
-    <img id="third"  src="images/shell3.jpg" alt="Shell 3" onclick="TryAgain();" />
-  </div>
-
-  <p class="hint"><strong>Tip:</strong> If your image names differ, change the <code>src</code> values above.</p>
+  <img id="first"  src="images/shell1.jpg" alt="Shell 1" onclick="WinnerMessage();" />
+  <img id="second" src="images/shell2.jpg" alt="Shell 2" onclick="TryAgain();" />
+  <img id="third"  src="images/shell3.jpg" alt="Shell 3" onclick="TryAgain();" />
 </body>
 </html>
