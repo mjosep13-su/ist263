@@ -1,55 +1,35 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Melanie Joseph - Biography</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lab 11 – Shell Game (Alerts)</title>
+
+  <link rel="stylesheet" href="animate.css" />
+
+  <style>
+    body { font-family: Arial, Helvetica, sans-serif; margin: 0; padding: 24px; }
+    h1 { margin-top: 0; }
+    .game { display: flex; gap: 20px; align-items: center; flex-wrap: wrap; }
+    .game img { width: 200px; height: auto; cursor: pointer; border-radius: 12px; }
+    .hint { margin-top: 12px; color: #555; font-size: 0.95rem; }
+  </style>
+
+  <script>
+    function WinnerMessage() { alert("You Won"); }
+    function TryAgain()     { alert("Wrong Shell - Try Again"); }
+  </script>
 </head>
 <body>
-    <nav>
-  <a href="index.html">Home</a> <span class="pipe">|</span>
-  <a href="skills.html">Skills</a> <span class="pipe">|</span>
-  <a href="contact.html">Contact</a>
-    </nav>
+  <h1>Shell Game – Version 1 (Alerts)</h1>
+  <p>Pick a shell. For this demo, the first shell is the winner.</p>
 
-    <header>
-        <img class="profileimg" src="../images2/me.jpeg" alt="Melanie Joseph">
-    </header>
+  <div class="game">
+    <img id="first"  src="images/shell1.jpg" alt="Shell 1" onclick="WinnerMessage();" />
+    <img id="second" src="images/shell2.jpg" alt="Shell 2" onclick="TryAgain();" />
+    <img id="third"  src="images/shell3.jpg" alt="Shell 3" onclick="TryAgain();" />
+  </div>
 
-    <main>
-        <h1>Melanie Joseph's Biography</h1>
-
-        <section>
-            <h2>Personal Info</h2>
-            <p>
-                My name is Melanie Joseph. My major is <strong>Information Management and Technology</strong> with a concentration in <strong>Data Analytics</strong>. 
-                I am interested in applying data to drive insights and support decision-making, particularly in <strong>healthcare and technology</strong>.
-            </p>
-            <p>
-                My technical skills are Python, Microsoft SQL Server, and Microsoft Excel. 
-                I also have strong leadership skills, problem-solving skills, and I am easily adaptable.
-            </p>
-        </section>
-
-        <section>
-            <h2>Hobbies</h2>
-            <ul>
-                <li>Playing volleyball</li>
-                <li>Shopping</li>
-                <li>Hanging out with friends</li>
-                <li>Watching <em>Gossip Girl</em></li>
-            </ul>
-            <p>
-                I have one younger brother and a mini golden doodle dog named <strong>Teddy</strong>. 
-                I look forward to learning many more things in IST 263.
-            </p>
-        </section>
-    </main>
-
-    <footer>
-        <hr>
-        <p>&copy; 2025 Melanie Joseph</p>
-    </footer>
+  <p class="hint"><strong>Tip:</strong> If your image names differ, change the <code>src</code> values above.</p>
 </body>
 </html>
