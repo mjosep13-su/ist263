@@ -1,51 +1,54 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Lab 11 – Shell Game (Inline Messages + Shuffle)</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lab 11 - Shell Game</title>
+<link rel="stylesheet" href="animate2.css">
+<style>
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+#first { order: 2; }
+#second { order: 3; }
+#third { order: 4; }
+img {
+  width: 200px;
+  height: auto;
+  cursor: pointer;
+  border-radius: 12px;
+}
+#result {
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: center;
+}
+</style>
 
-  <!-- Lab preview calls for animate2.css -->
-  <link rel="stylesheet" href="animate2.css" />
-
-  <style>
-    .container { display: flex; gap: 16px; align-items: center; flex-wrap: wrap; }
-    /* Initial orders so we can shuffle #first */
-    #first  { order: 2; }
-    #second { order: 3; }
-    #third  { order: 4; }
-    img { width: 200px; height: auto; cursor: pointer; border-radius: 12px; }
-    #result { margin-top: 12px; font-weight: 600; }
-  </style>
-
-  <script>
-    // Inline (non-alert) messages
-    function WinnerMessage() {
-      document.getElementById("result").innerHTML = "You Won! 🎉";
-    }
-    function TryAgain() {
-      document.getElementById("result").innerHTML = "Wrong Shell - Try Again";
-    }
-
-    // Randomize the winning shell's position on page load
-    function ShuffleShells() {
-      var randomOrder = Math.floor(Math.random() * 3) + 2; // 2, 3, or 4
-      document.getElementById("first").style.order = randomOrder;
-    }
-  </script>
+<script>
+function WinnerMessage() {
+  document.getElementById("result").innerHTML = "You Won!";
+}
+function TryAgain() {
+  document.getElementById("result").innerHTML = "Wrong Shell - Try Again";
+}
+function ShuffleShells() {
+  var randomOrder = Math.floor((Math.random() * 3) + 2);
+  document.getElementById("first").style.order = randomOrder;
+}
+</script>
 </head>
+
 <body onload="ShuffleShells()">
-  <h1>Shell Game – Version 2 (Inline Messages + Shuffle)</h1>
-
-  <div class="container">
-    <!-- First image is the winner -->
-    <img id="first"  src="images/shell1.jpg" alt="Shell 1" onclick="WinnerMessage()" />
-    <img id="second" src="images/shell2.jpg" alt="Shell 2" onclick="TryAgain()" />
-    <!-- THIRD IMAGE: make sure this line matches exactly -->
-    <img id="third"  src="images/shell3.jpg" alt="Shell 3" onclick="TryAgain()" />
-  </div>
-
-  <!-- Inline message target -->
-  <div id="result"></div>
+<h1>Shell Game</h1>
+<div class="container">
+  <img id="first" src="images/shell1.jpg" alt="Shell 1" onclick="WinnerMessage()">
+  <img id="second" src="images/shell2.jpg" alt="Shell 2" onclick="TryAgain()">
+  <img id="third" src="images/shell3.jpg" alt="Shell 3" onclick="TryAgain()">
+</div>
+<div id="result"></div>
 </body>
 </html>
