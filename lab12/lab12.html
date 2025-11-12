@@ -7,7 +7,7 @@
   <style>
     /* page & container */
     body {
-      font-family: Verdana, Geneva, Tahoma, sans-serif; 
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
       background-color: #111111;
       color: #ffffff;
       margin: 0;
@@ -21,7 +21,7 @@
       box-sizing: border-box;
     }
 
-    /* lock image (left) + text (right) side-by-side */
+    /* side-by-side layout that never jumps */
     #toprow {
       display: flex;
       align-items: flex-start;
@@ -31,11 +31,12 @@
     /* large image column */
     #bigimages {
       flex: 0 0 720px;
+      margin-right: 0;
     }
     #bigimages img {
       max-width: 100%;
       height: auto;
-      display: none; /* JS will show one at a time */
+      /* IMPORTANT: do NOT hide all images here, so Mercury can show by default */
     }
 
     /* text column */
@@ -60,16 +61,16 @@
       max-width: 38ch;
     }
 
-    /* thumbnails row centered under the two columns */
+    /* thumbnails row centered below */
     #thumbnails {
       width: 100%;
       text-align: center;
       padding-top: 24px;
     }
-    #mercurythumb, #venusthumb, #earththumb, #marsthumb, 
+    #mercurythumb, #venusthumb, #earththumb, #marsthumb,
     #jupiterthumb, #saturnthumb, #uranusthumb, #neptunethumb {
       width: 90px; height: 90px; object-fit: cover;
-      border-radius: 50%; /* circular thumbs */
+      border-radius: 50%;
       margin: 6px 10px;
       cursor: pointer;
       border: 2px solid #222;
@@ -78,7 +79,7 @@
     }
     #thumbnails img:hover { transform: scale(1.05); border-color: #555; opacity: 1; }
 
-    /* Step 1: show Mercury first; hide others on load */
+    /* SHOW Mercury first; HIDE everything else on load */
     #mercury, #mercuryinfo { display: block; }
     #venus, #earth, #mars, #jupiter, #saturn, #uranus, #neptune,
     #venusinfo, #earthinfo, #marsinfo, #jupiterinfo, #saturninfo, #uranusinfo, #neptuneinfo {
@@ -87,19 +88,19 @@
   </style>
 
   <script>
-    // Turn everything off
+    // turn everything off
     function PlanetsOff() {
       const imgs  = ['mercury','venus','earth','mars','jupiter','saturn','uranus','neptune'];
       const infos = ['mercuryinfo','venusinfo','earthinfo','marsinfo','jupiterinfo','saturninfo','uranusinfo','neptuneinfo'];
       imgs.forEach(id  => document.getElementById(id).style.display  = 'none');
       infos.forEach(id => document.getElementById(id).style.display = 'none');
     }
-    // Show helper
+    // show helper
     function show(planet) {
       document.getElementById(planet).style.display = 'block';
       document.getElementById(planet + 'info').style.display = 'block';
     }
-    // One-on functions
+    // per-planet functions
     function MercuryOn(){ show('mercury'); }
     function VenusOn(){ show('venus'); }
     function EarthOn(){ show('earth'); }
@@ -114,7 +115,7 @@
   <div id="slideshow-container">
     <div id="toprow">
       <div id="bigimages">
-        <!-- keeping your original image paths -->
+        <!-- original image URLs kept exactly the same -->
         <img src="https://peopel-su.github.io/ist263/images/mecury.jpg" alt="mercury" id="mercury">
         <img src="https://peopel-su.github.io/ist263/images/venus.jpg" alt="venus" id="venus">
         <img src="https://peopel-su.github.io/ist263/images/earth.jpg" alt="earth" id="earth">
