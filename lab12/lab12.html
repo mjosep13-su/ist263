@@ -5,7 +5,6 @@
   <title>Lab 12 Slideshow</title>
 
   <style>
-    /* page & container */
     body {
       font-family: Verdana, Geneva, Tahoma, sans-serif;
       background-color: #111111;
@@ -21,14 +20,12 @@
       box-sizing: border-box;
     }
 
-    /* side-by-side layout that never jumps */
     #toprow {
       display: flex;
       align-items: flex-start;
       gap: 40px;
     }
 
-    /* large image column */
     #bigimages {
       flex: 0 0 720px;
       margin-right: 0;
@@ -36,10 +33,8 @@
     #bigimages img {
       max-width: 100%;
       height: auto;
-      /* IMPORTANT: do NOT hide all images here, so Mercury can show by default */
     }
 
-    /* text column */
     #planetinfo {
       flex: 1;
       padding: 20px 0;
@@ -61,7 +56,6 @@
       max-width: 38ch;
     }
 
-    /* thumbnails row centered below */
     #thumbnails {
       width: 100%;
       text-align: center;
@@ -79,7 +73,6 @@
     }
     #thumbnails img:hover { transform: scale(1.05); border-color: #555; opacity: 1; }
 
-    /* SHOW Mercury first; HIDE everything else on load */
     #mercury, #mercuryinfo { display: block; }
     #venus, #earth, #mars, #jupiter, #saturn, #uranus, #neptune,
     #venusinfo, #earthinfo, #marsinfo, #jupiterinfo, #saturninfo, #uranusinfo, #neptuneinfo {
@@ -88,19 +81,16 @@
   </style>
 
   <script>
-    // turn everything off
     function PlanetsOff() {
       const imgs  = ['mercury','venus','earth','mars','jupiter','saturn','uranus','neptune'];
       const infos = ['mercuryinfo','venusinfo','earthinfo','marsinfo','jupiterinfo','saturninfo','uranusinfo','neptuneinfo'];
       imgs.forEach(id  => document.getElementById(id).style.display  = 'none');
       infos.forEach(id => document.getElementById(id).style.display = 'none');
     }
-    // show helper
     function show(planet) {
       document.getElementById(planet).style.display = 'block';
       document.getElementById(planet + 'info').style.display = 'block';
     }
-    // per-planet functions
     function MercuryOn(){ show('mercury'); }
     function VenusOn(){ show('venus'); }
     function EarthOn(){ show('earth'); }
@@ -115,7 +105,6 @@
   <div id="slideshow-container">
     <div id="toprow">
       <div id="bigimages">
-        <!-- original image URLs kept exactly the same -->
         <img src="https://peopel-su.github.io/ist263/images/mecury.jpg" alt="mercury" id="mercury">
         <img src="https://peopel-su.github.io/ist263/images/venus.jpg" alt="venus" id="venus">
         <img src="https://peopel-su.github.io/ist263/images/earth.jpg" alt="earth" id="earth">
