@@ -9,56 +9,70 @@
 </head>
 <body>
   <header class="site-header">
-    <div class="branding">
-      <h1>Florence for Young Travelers</h1>
+    <div class="header-inner">
+      <div class="branding">
+        <h1>Florence for Young Travelers</h1>
+      </div>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="guide.html">Guide</a></li>
+          <li><a href="explore.html">Experiences</a></li>
+        </ul>
+      </nav>
     </div>
-    <nav class="site-nav" aria-label="Primary navigation">
-      <ul>
-        <li><a href="index.html" aria-current="page">Home</a></li>
-        <li><a href="guide.html">Guide</a></li>
-        <li><a href="explore.html">Explore</a></li>
-      </ul>
-    </nav>
   </header>
 
   <main class="page-main">
+    <!-- HERO IMAGE -->
     <section class="hero">
-      <h2>Welcome to Italy</h2>
-      <p>Italy is a country filled with art, history, and tradition. Every region has its own flavor—from the pasta of Emilia-Romagna to the seafood of Sicily. Florence, located in central Tuscany, remains one of the most visited and inspiring cities in Europe. It’s not just a destination for art lovers; it’s also a living classroom for architecture, language, and culture.</p>
-
-      <figure class="hero-figure">
-        <img src="Bandiera_d'Italia_001.jpg" alt="Italian flag waving in blue sky">
-        <figcaption>The Italian flag, symbolizing hope, faith, and charity.</figcaption>
-      </figure>
-
-      <p>For many young travelers, Florence is often the first stop in Italy. Compact and walkable, it offers centuries of history within just a few square miles. You can start your day with espresso and a pastry, explore centuries-old cathedrals, and end your night with pizza or gelato under the stars. The city encourages you to slow down, wander, and discover beauty in everyday moments.</p>
+      <img src="Bandiera_d'Italia_001.jpg" alt="Italian flag waving in blue sky" class="hero-img">
     </section>
 
-    <!-- FLEXBOX LAYOUT: section + aside -->
-    <div class="content-flex">
-      <section class="why-florence">
-        <h2>Why Florence Stands Out</h2>
-        <p>Florence, known locally as <em>Firenze</em>, is the birthplace of the Renaissance. Visionaries such as Leonardo da Vinci, Dante Alighieri, and Michelangelo once called it home. The city’s museums and architecture reveal how art, science, and faith intersected to change the world. From the red-tiled dome of the Duomo to the quiet bridges over the Arno River, Florence blends history and humanity unlike anywhere else.</p>
+    <!-- DISCOVER FLORENCE HEADING + TEXT BOX -->
+    <section class="intro">
+      <h2>Discover Florence</h2>
+      <div class="intro-text-box">
+        <p>
+          Italy is a country filled with art, history, and tradition. Every region has its own flavor—from the pasta of Emilia-Romagna to the seafood of Sicily. 
+          Florence, located in central Tuscany, remains one of the most visited and inspiring cities in Europe. 
+          It’s not just a destination for art lovers; it’s also a living classroom for architecture, language, and culture.
+        </p>
+      </div>
+    </section>
 
-        <figure>
+    <!-- THREE FLEX CARDS (IMAGES + HEADINGS + TEXT) -->
+    <section class="cards-section">
+      <div class="cards-row">
+
+        <article class="info-card">
           <img src="Italy_Base_Map.png" alt="Map of Italy showing major cities and regions">
-          <figcaption>Florence’s central position makes it an ideal hub for day trips across Italy.</figcaption>
-        </figure>
+          <h3>Where Is Florence?</h3>
+          <p>
+            Florence sits in the heart of Tuscany, making it a perfect base for exploring nearby cities and countryside.
+            Its central location means easy day trips by train or bus.
+          </p>
+        </article>
 
-        <p>Students visiting Florence will find a city full of learning opportunities. Art schools, cultural workshops, and language exchanges welcome international participants. Whether you’re sketching statues in Piazza della Signoria or studying Italian over a cappuccino, Florence invites you to engage, not just observe.</p>
-      </section>
+        <article class="info-card">
+          <img src="Bandiera_d'Italia_001.jpg" alt="Italian flag flying above blue sky">
+          <h3>Why Visit as a Student?</h3>
+          <p>
+            Florence is walkable, affordable, and full of student discounts. 
+            You can explore museums, local markets, and viewpoints without spending a fortune.
+          </p>
+        </article>
 
-      <aside class="travel-tips">
-        <h2>Quick Travel Tips</h2>
-        <ul>
-          <li>Learn a few Italian phrases like “<em>Grazie</em>” (thank you) and “<em>Per favore</em>” (please).</li>
-          <li>Keep small coins for gelato shops, buses, and cafes—many places prefer cash.</li>
-          <li>Dress modestly when visiting churches; shoulders and knees should be covered.</li>
-          <li>Always validate train tickets before boarding regional trains.</li>
-          <li>Carry your student ID—museums often offer discounts.</li>
-        </ul>
-      </aside>
-    </div>
+        <article class="info-card">
+          <img src="Italy_Base_Map.png" alt="Outline map of Italy highlighting Florence region">
+          <h3>Plan Your Trip</h3>
+          <p>
+            Use this site to find must-see spots, budgeting tips, and sample itineraries designed especially for young travelers and first-time visitors.
+          </p>
+        </article>
+
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
