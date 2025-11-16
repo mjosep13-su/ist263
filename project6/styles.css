@@ -136,9 +136,12 @@ img {
   text-align: center;
 }
 
+/* ⭐ UPDATED: uniform image sizes for all cards */
 .info-card img {
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  height: 220px;      /* fixed uniform height */
+  object-fit: cover;  /* crops edges to make all images match */
+  border-radius: 6px;
   margin-bottom: 0.75rem;
 }
 
@@ -202,3 +205,4 @@ img {
     padding: 0.75rem 1rem;
   }
 }
+
