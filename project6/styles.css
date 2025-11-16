@@ -28,172 +28,177 @@ img {
 .page-main {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 1rem 1rem 2rem;
+  padding: 1rem 1rem 2.5rem;
 }
 
-
-/* ===== Header + Navigation ===== */
+/* ===== Header + Navigation (top bar like wireframe) ===== */
 .site-header {
-  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
-  color: #ffffff;
-  padding: 1rem 1.5rem 0.75rem;
+  background-color: #e6e6e6;
+  border-bottom: 1px solid #cccccc;
+}
+
+.header-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+
+  display: flex;              /* FLEXBOX */
+  justify-content: space-between;
+  align-items: center;
 }
 
 .branding h1 {
   margin: 0;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
+  font-weight: 700;
 }
 
-.site-nav {
-  margin-top: 0.5rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.3);
-}
-
+/* nav on the right */
 .site-nav ul {
   list-style: none;
-  margin: 0 auto;
-  padding: 0.5rem 0;
-  max-width: 1100px;
+  margin: 0;
+  padding: 0;
 
-  display: flex;
-  justify-content: flex-start;
-  gap: 0.75rem;
-  flex-wrap: wrap;
+  display: flex;              /* FLEXBOX */
+  gap: 1rem;
 }
 
 .site-nav a {
   text-decoration: none;
-  color: #ffffff;
-  padding: 0.4rem 0.9rem;
-  border-radius: 999px;
+  color: #000000;
   font-size: 0.95rem;
-  transition: background-color 0.2s, color 0.2s;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
 }
 
 .site-nav a:hover,
 .site-nav a:focus {
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: #d9d9d9;
 }
 
 .site-nav a[aria-current="page"] {
-  background-color: var(--accent);
-  color: #4a2c1a;
+  background-color: var(--primary);
+  color: #ffffff;
 }
 
-
-/* ===== Hero Section ===== */
+/* ===== Hero image (large block like wireframe) ===== */
 .hero {
-  margin-top: 1.5rem;
-  padding: 1.25rem 1.5rem;
-  background-color: #ffffff;
-  border-radius: 1rem;
-  border-left: 6px solid var(--primary);
-  box-shadow: 0 4px 10px rgba(179, 0, 27, 0.1);
+  margin-top: 1rem;
+  background-color: #cccccc;
+  border-radius: 4px;
+  overflow: hidden;
 }
 
-.hero h2 {
-  margin-top: 0;
-  color: var(--primary-dark);
+.hero-img {
+  width: 100%;
+  max-height: 320px;
+  object-fit: cover;
 }
 
-.hero-figure figcaption {
-  font-size: 0.85rem;
-  color: #555;
-}
-
-
-/* ===== Flex Layout for Main Content ===== */
-.content-flex {
-  display: flex;
-  gap: 1.5rem;
+/* ===== Discover Florence heading + text box ===== */
+.intro {
+  text-align: center;
   margin-top: 2rem;
-  align-items: flex-start;
 }
 
+.intro h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #000000;
+}
 
-/* Main content box */
-.why-florence {
-  flex: 2 1 60%;
+.intro-text-box {
+  max-width: 750px;
+  margin: 0 auto;
+  background-color: #f0f0f0;
+  padding: 1rem 1.5rem;
+  border-radius: 4px;
+}
+
+/* ===== Cards row (3 columns) ===== */
+.cards-section {
+  margin-top: 2.5rem;
+}
+
+.cards-row {
+  display: flex;             /* FLEXBOX row of cards */
+  gap: 1.5rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.info-card {
+  flex: 1 1 30%;
   background-color: #ffffff;
-  padding: 1.25rem 1.5rem;
-  border-radius: 0.9rem;
-  border-top: 6px solid var(--primary);
-  box-shadow: 0 3px 8px rgba(179, 0, 27, 0.1);
+  border-radius: 6px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  padding: 1rem;
+  text-align: center;
 }
 
-.why-florence h2 {
-  margin-top: 0;
+.info-card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 0.75rem;
+}
+
+.info-card h3 {
+  margin: 0.5rem 0;
   color: var(--primary-dark);
+  font-size: 1.05rem;
 }
 
-
-/* Sidebar (Travel Tips) */
-.travel-tips {
-  flex: 1 1 35%;
-  background-color: var(--soft);
-  background-color: #ffe5e5;
-  padding: 1.25rem 1.5rem;
-  border-radius: 0.9rem;
-  border-top: 6px solid var(--primary);
-  box-shadow: 0 3px 8px rgba(179, 0, 27, 0.12);
+.info-card p {
+  font-size: 0.95rem;
 }
-
-.travel-tips h2 {
-  margin-top: 0;
-  color: var(--primary-dark);
-}
-
 
 /* ===== Footer ===== */
 .site-footer {
-  background-color: var(--primary-dark);
-  color: #fff0f0;
+  background-color: #e6e6e6;
   text-align: center;
   padding: 0.75rem;
-  font-size: 0.85rem;
-  margin-top: 2rem;
+  font-size: 0.8rem;
+  border-top: 1px solid #cccccc;
 }
 
-
-/* ===== Media Queries ===== */
+/* ===== Media Queries: responsiveness ===== */
 
 /* Tablet & mobile */
 @media (max-width: 768px) {
+  /* Stack header items */
+  .header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  /* Nav vertical so links fit on mobile */
   .site-nav ul {
     flex-direction: column;
-    align-items: stretch;
+    align-items: flex-start;
   }
 
-  .site-nav a {
-    display: block;
-    text-align: center;
-  }
-
-  /* Stack sidebar under main content */
-  .content-flex {
+  /* Cards stack instead of 3 across */
+  .cards-row {
     flex-direction: column;
+  }
+
+  .info-card {
+    flex: 1 1 100%;
   }
 }
 
 /* Extra small screens */
 @media (max-width: 480px) {
-  .branding h1 {
-    font-size: 1.4rem;
-  }
-
   .page-main {
-    padding: 0.75rem;
+    padding: 0.75rem 0.5rem 2rem;
   }
 
-  .hero,
-  .why-florence,
-  .travel-tips {
-    padding: 1rem;
+  .intro h2 {
+    font-size: 1.6rem;
   }
-}
-img {
-  max-width: 60%;   /* makes all images smaller */
-  height: auto;
-  display: block;
-  margin: 0 auto;   /* centers them */
+
+  .intro-text-box {
+    padding: 0.75rem 1rem;
+  }
 }
