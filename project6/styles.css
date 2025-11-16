@@ -191,3 +191,9 @@ img {
     padding: 1rem;
   }
 }
+img {
+  max-width: 60%;   /* makes all images smaller */
+  height: auto;
+  display: block;
+  margin: 0 auto;   /* centers them */
+}
