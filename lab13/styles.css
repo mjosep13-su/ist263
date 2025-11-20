@@ -7,7 +7,7 @@ body {
 }
 
 a {
-  color: #00c2c7;
+  color: #008A8E;
   text-decoration: none;
 }
 
@@ -37,7 +37,7 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #00c2c7;
+  background-color: #008A8E; 
   color: #ffffff;
 }
 
@@ -85,7 +85,7 @@ textarea {
   width: 100%;
   box-sizing: border-box;
   padding: 10px;
-  border: 1px solid #00c2c7;
+  border: 1px solid #008A8E; 
   border-radius: 6px;
   background: #ffffff;
   color: #005582;
@@ -94,7 +94,7 @@ textarea {
 input[type="submit"] {
   margin-top: 14px;
   padding: 10px 16px;
-  background: #00c2c7;
+  background: #008A8E; 
   color: #ffffff;
   border: 0;
   border-radius: 6px;
@@ -112,7 +112,6 @@ input[type="submit"]:hover {
   margin: 0 auto;
 }
 
-/* Skills layout */
 .skillstable table {
   margin: 0 auto;
 }
@@ -142,7 +141,6 @@ input[type="submit"]:hover {
   margin-right: auto;
 }
 
-/* Tablet & smaller */
 @media (max-width: 900px) {
   nav a {
     display: block;
