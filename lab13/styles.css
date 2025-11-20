@@ -170,3 +170,17 @@ input[type="submit"]:hover {
     min-width: 0;
   }
 }
+
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 10px;
+  background-color: #ffffff;
+  padding: 0.5rem 1rem;
+  border: 1px solid #000;
+  z-index: 1000;
+}
+
+.skip-link:focus {
+  left: 10px;
+}
