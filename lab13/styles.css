@@ -6,9 +6,9 @@ body {
   padding: 0;
 }
 
-/* All main body links — ACCESSIBLE COLOR */
+/* All main body links — now BLACK for perfect contrast */
 a {
-  color: #006989; /* darker teal, passes contrast */
+  color: #000000;
   text-decoration: none;
 }
 
@@ -37,7 +37,7 @@ nav a {
   transition: background-color 0.3s, color 0.3s;
 }
 
-/* nav hover now uses the same darker teal */
+/* nav hover remains accessible */
 nav a:hover {
   background-color: #006989;
   color: #ffffff;
@@ -81,7 +81,7 @@ form label {
   color: #005582;
 }
 
-/* inputs: border color updated to darker teal */
+/* input borders remain accessible */
 input[type="text"],
 input[type="email"],
 textarea {
@@ -94,7 +94,7 @@ textarea {
   color: #005582;
 }
 
-/* button: background updated to darker teal */
+/* button uses accessible background color */
 input[type="submit"] {
   margin-top: 14px;
   padding: 10px 16px;
@@ -189,5 +189,3 @@ input[type="submit"]:hover {
 .skip-link:focus {
   left: 10px;
 }
-
-
