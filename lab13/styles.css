@@ -6,8 +6,9 @@ body {
   padding: 0;
 }
 
+/* All main body links — ACCESSIBLE COLOR */
 a {
-  color: #008A8E;
+  color: #006989; /* darker teal, passes contrast */
   text-decoration: none;
 }
 
@@ -36,8 +37,9 @@ nav a {
   transition: background-color 0.3s, color 0.3s;
 }
 
+/* nav hover now uses the same darker teal */
 nav a:hover {
-  background-color: #008A8E; 
+  background-color: #006989;
   color: #ffffff;
 }
 
@@ -79,22 +81,24 @@ form label {
   color: #005582;
 }
 
+/* inputs: border color updated to darker teal */
 input[type="text"],
 input[type="email"],
 textarea {
   width: 100%;
   box-sizing: border-box;
   padding: 10px;
-  border: 1px solid #008A8E; 
+  border: 1px solid #006989;
   border-radius: 6px;
   background: #ffffff;
   color: #005582;
 }
 
+/* button: background updated to darker teal */
 input[type="submit"] {
   margin-top: 14px;
   padding: 10px 16px;
-  background: #008A8E; 
+  background: #006989;
   color: #ffffff;
   border: 0;
   border-radius: 6px;
@@ -112,6 +116,7 @@ input[type="submit"]:hover {
   margin: 0 auto;
 }
 
+/* Skills layout */
 .skillstable table {
   margin: 0 auto;
 }
@@ -141,6 +146,7 @@ input[type="submit"]:hover {
   margin-right: auto;
 }
 
+/* Tablet & smaller */
 @media (max-width: 900px) {
   nav a {
     display: block;
@@ -169,6 +175,7 @@ input[type="submit"]:hover {
   }
 }
 
+/* Skip link for accessibility */
 .skip-link {
   position: absolute;
   left: -999px;
@@ -182,3 +189,5 @@ input[type="submit"]:hover {
 .skip-link:focus {
   left: 10px;
 }
+
+
