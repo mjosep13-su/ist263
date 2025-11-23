@@ -43,6 +43,18 @@ nav a:hover {
   color: #ffffff;
 }
 
+nav a:hover {
+  background-color: #006989;
+  color: #ffffff !important;
+}
+
+/* Active/current page link */
+nav a[aria-current="page"] {
+  background-color: #006989;
+  color: #ffffff !important;
+}
+
+
 .row {
   display: flex;
   justify-content: space-between;
