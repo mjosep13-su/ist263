@@ -189,3 +189,14 @@ input[type="submit"]:hover {
 .skip-link:focus {
   left: 10px;
 }
+.map {
+  display: block;
+  width: 100%;
+  height: 320px;
+  border: 0;
+
+  /* NEW FIX */
+  background: #ffffff;   /* gives iframe a clean backdrop */
+  padding: 10px;         /* prevents text from touching aqua */
+  border-radius: 8px;    /* optional, for clean rounding */
+}
