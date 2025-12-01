@@ -27,6 +27,16 @@
     </style>
     <script>
         /* add code to open and close our subscribe form */
+        function openModal () {
+    document.getElementById('modal').style.display = 
+    'block';
+        }
+        function closeModal () {
+    document.getElementById('modal').style.display = 
+    'none'; 
+        }
+
+
     </script>
 </head>
 <body>
@@ -41,11 +51,12 @@
         
         <p>Muffin pastry cupcake cheesecake icing lollipop. Jelly beans tootsie roll tootsie roll toffee gummi bears chocolate bar. Tart cake donut fruitcake oat cake sesame snaps jelly cookie icing. Jelly liquorice pudding biscuit cookie sweet roll tootsie roll dessert lollipop.</p>
 
-        <p><a class="button">Subscribe to Our Newsletter</a></p>
+        <p><a class="button"> onlcick="openModal();
+            ">Subscribe to Our Newsletter</a></p>
 
         <!-- make a subscribe form here -->
          <div id="modal">
-            <p id="close">X</p>
+            <p id="close" onlclick="closeModal"();>X</p>
             <form>
                 <label for="name">Name</label><br>
                 <input type="text" id="name" name="name"> <br>
