@@ -13,6 +13,10 @@
             padding: 5px;
         }
         /* write CSS to position our subscribe form and hide it when the page loads here */
+
+        #modal {
+
+        }
     </style>
     <script>
         /* add code to open and close our subscribe form */
@@ -33,6 +37,17 @@
         <p><a class="button">Subscribe to Our Newsletter</a></p>
 
         <!-- make a subscribe form here -->
+         <div id="modal">
+            <p class="close">X</p>
+            <form>
+                <label for="name">Name</label><br>
+                <input type="text" id="name" name="name"> 
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email"><br>
+                <input type="submit" value="Subscribe">
+            </form>
+
+         </div>
 
     </div>
 </body>
