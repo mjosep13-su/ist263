@@ -13,11 +13,12 @@
       <div class="branding">
         <h1>Florence for Young Travelers</h1>
       </div>
+
       <nav class="site-nav" aria-label="Primary navigation">
         <ul>
           <li><a href="index.html" aria-current="page">Home</a></li>
           <li><a href="guide.html">Guide</a></li>
-          <li><a href="explore.html">Experiences</a></li>
+          <li><a href="explore.html">Explore</a></li>
         </ul>
       </nav>
     </div>
@@ -34,8 +35,8 @@
       <h2>Discover Florence</h2>
       <div class="intro-text-box">
         <p>
-          Italy is a country filled with art, history, and tradition. Every region has its own flavor—from the pasta of Emilia-Romagna to the seafood of Sicily. 
-          Florence, located in central Tuscany, remains one of the most visited and inspiring cities in Europe. 
+          Italy is a country filled with art, history, and tradition. Every region has its own flavor—from the pasta of Emilia-Romagna to the seafood of Sicily.
+          Florence, located in central Tuscany, remains one of the most visited and inspiring cities in Europe.
           It’s not just a destination for art lovers; it’s also a living classroom for architecture, language, and culture.
         </p>
       </div>
@@ -45,12 +46,20 @@
     <div class="cards-section">
       <div class="cards-row">
 
+        <!-- UPDATED: clickable map preview opens Google Maps -->
         <article class="info-card">
-          <img src="Italy_Base_Map.png" alt="Map of Italy showing major cities and regions">
+          <a
+            href="https://www.google.com/maps/place/Florence,+Metropolitan+City+of+Florence,+Italy/"
+            target="_blank"
+            rel="noopener"
+            aria-label="Open Florence in Google Maps (opens in a new tab)"
+          >
+            <img src="Italy_Base_Map.png" alt="Small map preview of Italy. Click to open a larger interactive map in Google Maps.">
+          </a>
           <h3>Where Is Florence?</h3>
           <p>
             Florence sits in the heart of Tuscany, making it a perfect base for exploring nearby cities and countryside.
-            Its central location means easy day trips by train or bus.
+            Click the map above to open Google Maps and zoom in.
           </p>
         </article>
 
@@ -74,6 +83,38 @@
 
       </div>
     </div>
+
+    <!-- NEW: explain Guide + Explore pages and add CTAs -->
+    <section class="cards-section" aria-labelledby="more-pages">
+      <div class="intro">
+        <h2 id="more-pages">What You’ll Find on the Other Pages</h2>
+        <div class="intro-text-box">
+          <p>
+            Ready to go deeper? Use the Guide page for planning tips and must-see spots, and visit Explore for interactive features like a gallery, map,
+            itinerary ideas, and helpful travel links.
+          </p>
+        </div>
+      </div>
+
+      <div class="cards-row">
+        <article class="info-card">
+          <h3>Guide</h3>
+          <p>
+            Get detailed trip planning help, including must-see attractions, budget tips, and packing advice designed for young travelers.
+          </p>
+          <p><a class="btn" href="guide.html">Go to the Guide</a></p>
+        </article>
+
+        <article class="info-card">
+          <h3>Explore</h3>
+          <p>
+            Check out interactive content like a photo gallery, clickable maps, a sample itinerary, and curated travel resources.
+          </p>
+          <p><a class="btn" href="explore.html">Go to Explore</a></p>
+        </article>
+      </div>
+    </section>
+
   </main>
 
   <footer class="site-footer">
