@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Explore | Florence for Young Travelers</title>
+
+  <!-- Google Font (Raleway) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="branding">
+        <h1>Florence for Young Travelers</h1>
+      </div>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="guide.html">Guide</a></li>
+          <li><a href="explore.html" aria-current="page">Explore</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <section class="intro">
+      <h2>Explore Florence</h2>
+      <div class="intro-text-box">
+        <p>
+          Browse a photo gallery, use an interactive map, and check out a sample itinerary
+          plus helpful resources for planning your trip.
+        </p>
+      </div>
+    </section>
+
+    <!-- Photo Gallery (Learn Something New: CSS Grid + hover transition) -->
+    <section class="content-block" aria-labelledby="gallery">
+      <h3 id="gallery">Photo Gallery</h3>
+
+      <div class="gallery-grid">
+        <figure class="gallery-item">
+          <img src="images/gallery1.jpg" alt="Ponte Vecchio over the Arno River">
+          <figcaption>Ponte Vecchio</figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+          <img src="images/gallery2.jpg" alt="A Florence street with cafés and scooters">
+          <figcaption>City Streets</figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+          <img src="images/gallery3.jpg" alt="A plate of pasta on a restaurant table">
+          <figcaption>Food Finds</figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+          <img src="images/gallery4.jpg" alt="View of Florence from a scenic lookout">
+          <figcaption>Best Views</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Map -->
+    <section class="content-block" aria-labelledby="map">
+      <h3 id="map">Map</h3>
+
+      <div class="map-wrap">
+        <!-- You can swap this with your own saved Google Maps embed -->
+        <iframe
+          title="Map of Florence, Italy"
+          src="https://www.google.com/maps?q=Florence%2C%20Italy&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </section>
+
+    <!-- Sample Itinerary + Travel Resources (two panels like wireframe) -->
+    <section class="content-block" aria-label="Itinerary and travel resources panels">
+      <div class="button-panels">
+        <div class="panel">
+          <h3>Sample Itinerary</h3>
+          <p><strong>Morning:</strong> Duomo area + coffee</p>
+          <p><strong>Afternoon:</strong> Ponte Vecchio + lunch</p>
+          <p><strong>Evening:</strong> Sunset at Piazzale Michelangelo</p>
+          <a class="btn" href="#itinerary">Jump to Itinerary</a>
+        </div>
+
+        <div class="panel">
+          <h3>Travel Resources</h3>
+          <p>Helpful links for museums, transit, and trip planning.</p>
+          <a class="btn" href="#resources">Jump to Resources</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Itinerary section -->
+    <section class="content-block" id="itinerary" aria-labelledby="itinerary-title">
+      <h3 id="itinerary-title">One-Day Itinerary</h3>
+      <div class="content-box">
+        <ol>
+          <li><strong>8:30 AM:</strong> Breakfast near the Duomo</li>
+          <li><strong>10:00 AM:</strong> Explore Cathedral Square (book tickets if climbing)</li>
+          <li><strong>12:30 PM:</strong> Quick lunch (panini/market)</li>
+          <li><strong>2:00 PM:</strong> Uffizi or Accademia (timed entry recommended)</li>
+          <li><strong>5:00 PM:</strong> Walk along the Arno + Ponte Vecchio</li>
+          <li><strong>Sunset:</strong> Piazzale Michelangelo</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Resources section -->
+    <section class="content-block" id="resources" aria-labelledby="resources-title">
+      <h3 id="resources-title">Travel Resources</h3>
+
+      <div class="content-box">
+        <ul>
+          <li><a href="https://www.uffizi.it/en" target="_blank" rel="noopener">Uffizi Galleries (official)</a></li>
+          <li><a href="https://www.visitflorence.com/" target="_blank" rel="noopener">Visit Florence</a></li>
+          <li><a href="https://www.trenitalia.com/" target="_blank" rel="noopener">Trenitalia (train travel)</a></li>
+          <li><a href="https://www.at-bus.it/en" target="_blank" rel="noopener">AT Bus (local transit)</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Florence for Young Travelers</p>
+  </footer>
+</body>
+</html>
