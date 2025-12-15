@@ -328,16 +328,37 @@ img {
   }
 }
 
-/* ===== Photo Gallery: 2 columns x 2 rows, larger images ===== */
+/* ===== Photo Gallery: 3 columns x 2 rows ===== */
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 columns */
-  gap: 2rem;                             /* more space */
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 1.75rem;                          /* more breathing room */
 }
 
 .gallery-item img {
   width: 100%;
-  height: 600px;        /* ✅ bigger */
+  height: 340px;        /* bigger but reasonable */
   object-fit: cover;
   display: block;
 }
+
+@media (max-width: 900px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery-item img {
+    height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-item img {
+    height: 260px;
+  }
+}
+
